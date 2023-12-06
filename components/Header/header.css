@@ -1,0 +1,46 @@
+
+nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: var(--padding-s);
+  gap: var(--gap-xs);
+  }
+  .logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav > ul {
+    display: flex;
+    gap: var(--gap-m);
+    align-items: center;
+  }
+  nav > ul > li:hover{
+    background-color: var(--color-1);
+    color: var(--color-2);
+    border-radius: var(--secondary-br);
+    padding: var(--padding-xs);
+  }
+  nav > input { 
+    width: 60%;
+    border-radius: var(--primary-br);
+    padding: var(--padding-xs);
+    background: var(--color-3) ;
+    border: none;
+  }
+  .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--gap-s);
+    cursor: pointer;
+  }
+  .profile-container > img {
+    height: 30px;
+    border-radius: var(--primary-br);
+  }
+  
