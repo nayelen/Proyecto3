@@ -15,9 +15,9 @@ export const printHeader = (app$$) => {
   logo.src = "./public/logo-pint.png";
   logo.className = "logo";
   navList.innerHTML = `
-  <li>Inicio</li>
-  <li>Hoy</li>
-  <li>Crear</li>`
+  <li><a class="link" href="#home">Inicio</a></li>
+  <li><a class="link" href="#today">Hoy</a></li>
+  <li><a class="link" href="#create">Crear</a></li>`
   inputSearch.placeholder = "🔍 Search"
   profileDiv.className = "profile-container"
   profileNotifications.src = "./public/campana.png"

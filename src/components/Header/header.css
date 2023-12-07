@@ -7,6 +7,7 @@ nav {
   justify-content: space-between;
   padding: var(--padding-s);
   gap: var(--gap-xs);
+  font-size: var(--font-size-pri);
   }
   .logo {
     height: 50px;
@@ -19,7 +20,11 @@ nav {
     gap: var(--gap-m);
     align-items: center;
   }
-  nav > ul > li:hover{
+  .link {
+    color: var(--color-1);
+    text-decoration: none;
+  }
+  .link:hover{
     background-color: var(--color-1);
     color: var(--color-2);
     border-radius: var(--secondary-br);

@@ -1,9 +1,9 @@
+import { response } from '../../data/mockResponse';
 import './cardsContainer.css';
 
 export const printCardsContainer = (data) => {
   const cardsContainer = document.createElement('section');
-  const photos = (data && data.results)
-
+  const photos = (data && data.results) || response.results;
 
   if (!Array.isArray(photos) || photos.length === 0) {
     const errorMessage = document.createElement('p')
@@ -11,6 +11,7 @@ export const printCardsContainer = (data) => {
     cardsContainer.appendChild(errorMessage)
     return cardsContainer
   }
+  console.log(photos)
   for (const photo of photos) {
     const card = document.createElement("div");
     card.className = "card";
