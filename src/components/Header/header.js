@@ -12,7 +12,7 @@ export const printHeader = (app$$) => {
   const profileMessages = document.createElement("img");
   const profile = document.createElement("img");
 
-  logo.src = "./public/logo-pint.png";
+  logo.src = "/public/logo-pint.png";
   logo.className = "logo";
   navList.innerHTML = `
   <li><a class="link" href="#home">Inicio</a></li>
@@ -20,9 +20,9 @@ export const printHeader = (app$$) => {
   <li><a class="link" href="#create">Crear</a></li>`
   inputSearch.placeholder = "🔍 Search"
   profileDiv.className = "profile-container"
-  profileNotifications.src = "./public/campana.png"
-  profileMessages.src = "./public/mensajes.png"
-  profile.src = "./public/profile.JPG"
+  profileNotifications.src = "/public/campana.png"
+  profileMessages.src = "/public/mensajes.png"
+  profile.src = "/public/profile.JPG"
 
 
   app$$.appendChild(header);
