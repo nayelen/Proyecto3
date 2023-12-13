@@ -5,7 +5,7 @@ export const printFooter = (app$$) => {
   const h3Footer = document.createElement("h3");
   h3Footer.textContent = 'Created by Nadia Perez with 🤍 ©2023'
   const gitImage = document.createElement("img");
-  gitImage.src = './public/github.png';
+  gitImage.src = './public/github.webp';
   const gitLink = document.createElement("a");
   gitLink.href = 'https://github.com/nayelen'
 
