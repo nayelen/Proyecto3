@@ -1,11 +1,12 @@
 .card{
   min-height: fit-content;
+  display: inline-block;
+  margin: var(--margin-xs);
 } 
 .photo {
   object-fit: cover;
   width: 100%;
   border-radius: var(--primary-br);
-  padding: var(--padding-s);
 } 
 .photo:hover {
   cursor: zoom-in;
