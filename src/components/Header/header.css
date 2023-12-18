@@ -1,19 +1,25 @@
 
 nav {
   height: 10vh;
+  background-color: var(--color-2);
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
   padding: var(--padding-s);
+  position: fixed;
   gap: var(--gap-xs);
   font-size: var(--font-size-pri);
+  z-index: 1;
   }
   .logo {
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .logo:hover {
+    transform: scale3d(1.5, 1.5, 1);
   }
   nav > ul {
     display: flex;
@@ -23,6 +29,7 @@ nav {
   .link {
     color: var(--color-1);
     text-decoration: none;
+    padding: var(--padding-xs);
   }
   .link:hover{
     background-color: var(--color-1);
@@ -48,4 +55,6 @@ nav {
     height: 30px;
     border-radius: var(--primary-br);
   }
-  
+  .profile-container > img:hover {
+    transform: rotate3d(0, 0, 1, 25deg);
+  }

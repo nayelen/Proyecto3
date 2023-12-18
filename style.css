@@ -12,7 +12,7 @@
  --margin-m: 30px;
  --margin-l: 40px;
  --margin-xl: 50px;
- --margin-section: 150px;
+ --margin-section: 100px;
 
  --padding-xs: 10px;
  --padding-s: 20px;
@@ -55,6 +55,7 @@ main {
 section{
   width: 100%;
   column-count: 4;
+  margin-top: var(--margin-section);
 }
 
 

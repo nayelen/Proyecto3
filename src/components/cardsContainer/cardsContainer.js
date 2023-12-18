@@ -18,9 +18,19 @@ export const printCardsContainer = (data) => {
     const img = document.createElement("img");
     img.src = photo.urls.regular;
     img.className = "photo";
+    const divDescription = document.createElement("div");
+    const name = document.createElement("p");
+    name.textContent = photo.user.first_name;
+    const profile = document.createElement("img");
+    profile.src = photo.user.profile_image.small;
+    profile.className = "profile";
     console.log(img)
     cardsContainer.appendChild(card);
     card.appendChild(img)
+    card.appendChild(divDescription);
+    divDescription.appendChild(profile);
+    divDescription.appendChild(name);
+
   }
   return cardsContainer
 }

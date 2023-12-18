@@ -1,19 +1,24 @@
-
-.card {
-  width: 100%;
-  max-height: fit-content;
-  position: relative;
-  top: 0;
-  font-size: var(--font-size);
-}
+.card{
+  min-height: 17em;
+} 
 .photo {
   object-fit: cover;
   width: 100%;
   border-radius: var(--primary-br);
   padding: var(--padding-xs);
 } 
-p {
+.photo:hover {
+  cursor: zoom-in;
+  transform: rotate(0deg) scale(1.1) translateZ(4px); 
+  transition: .5s all ease;
+  filter: brightness(115%);
+}
+.card div {
   display: flex;
-  justify-content: center;
-  font-size: var(--font-size-sec);
+  justify-content: space-around;
+  align-items: center;
+  margin: var(--margin-xs);
+}
+.profile {
+  border-radius: 50%;
 }
