@@ -74,12 +74,13 @@ section{
 @media (max-width: 500px) {
   section {
     columns: 1;
+    margin-top: 25vh;
   }
   nav {
     display: flex;
     flex-wrap: wrap;
-    height: 18vh;
-    justify-content: flex-start;
+    height: 25vh;
+    justify-content: center;
   }
  
 }
